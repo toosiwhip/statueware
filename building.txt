@@ -1,0 +1,20 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Building towers to fly", "Ocean")
+
+local Tab = Window:NewTab("Main")
+
+Section:NewButton("Infinite Coins", "Farms Coins For You", function()
+
+local Section = Tab:NewSection("Farm")
+
+local timesToRun = 100
+
+for i = 1, timesToRun do
+local args = {
+[1] = "\233\163\158\232\161\140\231\187\147\230\157\159"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Msg"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
+end
+  
+end)
