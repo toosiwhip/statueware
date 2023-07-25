@@ -3,9 +3,9 @@ local Window = Library.CreateLib("Building towers to fly", "Ocean")
 
 local Tab = Window:NewTab("Main")
 
-Section:NewButton("Infinite Coins", "Farms Coins For You", function()
-
 local Section = Tab:NewSection("Farm")
+
+Section:NewButton("Infinite Coins", "Farms Coins For You", function()
 
 local timesToRun = 100
 
@@ -16,5 +16,5 @@ local args = {
 
 game:GetService("ReplicatedStorage"):WaitForChild("Msg"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
 end
-  
+
 end)
